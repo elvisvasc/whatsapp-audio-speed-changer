@@ -50,7 +50,7 @@ function formatDisplayRate(rate) {
 
 function changeAudioRate(rate) {  
   const speedButton = document.querySelector(".spChangerBtn");
-  speedButton.innerHTML = formatDisplayRate(rate);
+  speedButton.textContent = formatDisplayRate(rate);
 
   if (rate === 1) {
     speedButton.classList.remove("active");
@@ -87,7 +87,7 @@ const interval = setInterval(() => {
     clearInterval(interval);
 
     const speednButton = document.createElement("button");
-    speednButton.innerHTML = formatDisplayRate(1);
+    speednButton.textContent = formatDisplayRate(1);
     speednButton.classList.add("spChangerBtn");
     speednButton.addEventListener("click", () => togglePopup());
     header.appendChild(speednButton);
@@ -99,7 +99,7 @@ const interval = setInterval(() => {
     playbackRates.forEach(rate => {
       let speedItem = document.createElement("li");
         speedItem.classList.add("speedItem");      
-        speedItem.innerHTML = formatDisplayRate(rate);
+        speedItem.textContent = formatDisplayRate(rate);
         speedItem.addEventListener("click", () => onChangeRate(rate));
         itensContainer.appendChild(speedItem);
     })
