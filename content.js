@@ -5,8 +5,8 @@ var selectedRate = 1;
 var loopInterval = null;
 var DEBUG = false;
 
-function debug(message) {
-  DEBUG && console.log(message);
+function debug(...message) {
+  DEBUG && console.log(...message);
 }
 
 function startRateLoop(rate) {
