@@ -1,4 +1,4 @@
-# whatsapp-audio-speed-changer
+# Whatsapp Audio Speed Changer
 
 ## Allow to change audio speed for Whatsapp web messages.
 
