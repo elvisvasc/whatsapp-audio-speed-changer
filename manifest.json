@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "WhatsApp Speed Changer",
+  "name": "WhatsApp Audio Speed Changer",
   "version": "1.0",
   "description": "Allow to change audio speed for web messages.",
   "content_scripts": [
