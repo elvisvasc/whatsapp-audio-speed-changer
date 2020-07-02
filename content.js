@@ -9,21 +9,22 @@ function debug(...message) {
   DEBUG && console.log(...message);
 }
 
-function startRateLoop(rate) {
-  if (!loopInterval) {
-    debug('iniciando o loop de rate');
-    loopInterval = setInterval(() => {
-      debug('dentro o loop de rate: ', rate);
-      changeAudioRate(rate);
-    }, 500)
-  }
-}
-
 function endRateLoop() {
   debug('finalizou o loop de rate');
   clearInterval(loopInterval);
   loopInterval = null;
-  changeAudioRate(1);
+}
+
+function startRateLoop(rate) {
+  if (loopInterval) {
+    endRateLoop();
+  }
+
+  debug('iniciando o loop de rate');
+  loopInterval = setInterval(() => {
+    debug('dentro o loop de rate: ', rate);
+    changeAudioRate(rate);
+  }, 500)
 }
 
 function togglePopup() {
@@ -63,12 +64,12 @@ function changeAudioRate(rate) {
 
 function onChangeRate(rate) {
   togglePopup();
-
+  
   if (rate === 1) {
+    changeAudioRate(rate);
     endRateLoop();
   } else if (selectedRate !== rate) {
-    //termina o loop anterior
-    endRateLoop();
+    changeAudioRate(rate);
     //inicia um loop com o novo rate
     startRateLoop(rate);
   }
