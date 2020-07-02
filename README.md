@@ -7,3 +7,4 @@ Whatsapp Audio speed controller! Adjusts playback speed for your audio messages.
 ## Screenshots
 
 ![img1](../master/assets/screenshot.jpg)
+![img2](../master/assets/screenshot2.png)
