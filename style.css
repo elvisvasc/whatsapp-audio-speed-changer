@@ -1,0 +1,52 @@
+:root {
+  --dropdown-background: #fff;
+  --shadow-rgb: 0,0,0;
+}
+
+.spChangerBtn {
+  color: #919191;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+}
+
+.active {
+  color: dodgerblue;
+}
+
+.popupBox {
+  transform-origin: right top 0px;
+  transform: scale(1);
+  opacity: 1; 
+  right: 7px;
+  background-color: var(--dropdown-background);
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(var(--shadow-rgb),.26),0 2px 10px 0 rgba(var(--shadow-rgb),.16);
+  padding: 9px 0;
+  top: 44px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000;
+  display: none;
+  min-width: 50px;
+}
+
+.speedItensContainer {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.speedItem {
+  opacity: 1;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  line-height: 22px;
+}
+
+.visible {
+  display: block;
+}

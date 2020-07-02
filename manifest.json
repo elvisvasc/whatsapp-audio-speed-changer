@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "WhatsApp Speed Changer",
+  "version": "1.0",
+  "description": "Allow to change audio speed for web messages.",
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "permissions": [
+    "*://web.whatsapp.com/*"
+  ]
+}
