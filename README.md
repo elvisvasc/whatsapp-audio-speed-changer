@@ -4,7 +4,7 @@
 
 Whatsapp Audio speed controller! Adjusts playback speed for your audio messages.
 
-*[Firefox extension link](https://addons.mozilla.org/pt-BR/firefox/addon/whatsapp-audio-speed-changer){:target="_blank"}*
+*[Firefox extension link](https://addons.mozilla.org/pt-BR/firefox/addon/whatsapp-audio-speed-changer)*
 
 ## Screenshots
 
