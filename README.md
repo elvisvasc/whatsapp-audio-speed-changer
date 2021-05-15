@@ -1,4 +1,4 @@
-# WARNING! This extension is no longer working. Whatsapp web now serves audio via stream and is not possible acelerate them. Sorry.
+*WARNING!* This extension is no longer working. Whatsapp web now serves audio via stream and is not possible to accelerate them. Sorry.
 
 # Whatsapp Audio Speed Changer
 
