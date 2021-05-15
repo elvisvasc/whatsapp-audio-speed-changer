@@ -1,3 +1,5 @@
+# WARNING! This extension is no longer working. Whatsapp web now serves audio via stream and is not possible acelerate them. Sorry.
+
 # Whatsapp Audio Speed Changer
 
 ## Allow to change audio speed for Whatsapp web messages.
